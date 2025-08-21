@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && tsc && rm tsconfig.tsbuildinfo",
+    "build": "npm run clean && tsc && rimraf tsconfig.tsbuildinfo",
     "build:types": "tsc --emitDeclarationOnly",
     "test": "jest",
     "format": "prettier --write \"src/**/*.ts\" && prettier --write \"tests/**/*.ts\"",
